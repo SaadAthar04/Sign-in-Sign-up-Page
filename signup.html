@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="icon" type="png" href="https://www.iconpacks.net/icons/1/free-user-login-icon-305-thumb.png">
+    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="div1">
+        <form id="formid">
+            <h1>Sign Up</h1>
+            <p id="error" style="color: red;"></p>
+            <p id="success" style="color: green;"></p>
+            <input type="text" name="username" placeholder="Username" id="username" required>
+
+            <input type="password" name="password" placeholder="Password" id="password" required>
+
+            <input type="password" name="confirm_password" placeholder="Confirm Password" id="confirmpassword" required>
+
+            <br>
+
+            <div class="genderdiv">
+                <form>
+                    <select name="gen" id="genders">
+                        <option value="Select">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Perfer not to say</option>
+                    </select>
+                </form>
+            </div>
+
+            <input type="text" name="email" placeholder="Email" id="email" required>
+            <input type="text" name="phone" placeholder="Phone" id="phone" required>
+            <br>
+
+            <input class="dob" type="date" name="dob" id="dataofbirth">
+            <input type="text" name="address" placeholder="Address" id="address" required>
+            <input type="text" name="country" placeholder="Country" id="country" required>
+
+            <input type="submit" value="Sign Up" class="signupbtn" onclick="validatesignup()">
+            <input type="reset" value="Reset" class="resetbtn" onclick="resetbtn()">
+        </form>
+        <div class="d2">
+            <p>Already have an account? <input type="button" value="Log In" class="loginbtn"
+                    onclick="window.location.href='signin.html'"></p>
+        </div>
+    </div>
+</body>
+
+</html>
